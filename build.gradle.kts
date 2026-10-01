@@ -2,3 +2,11 @@
 plugins {
     alias(libs.plugins.android.application) apply false
 }
+
+subprojects {
+    if (tasks.findByName("prepareKotlinBuildScriptModel") == null) {
+        tasks.register("prepareKotlinBuildScriptModel") {
+            description = "Placeholder task for IntelliJ / Android Studio Kotlin DSL script model sync"
+        }
+    }
+}

@@ -11,17 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homework2">
+
+        <!-- Activity 1: registerform (Activity khởi chạy chính) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".registerform"
             android:exported="true"
-            android:theme="@style/Theme.Homework2"
+            android:label="Registration Form"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Activity 2: resultform -->
+        <activity
+            android:name=".resultform"
+            android:exported="false"
+            android:label="@string/result_title" />
+
+        <!-- Default MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

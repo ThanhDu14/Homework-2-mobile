@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".registerform">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Activity 1: registerform\n(Nơi Thành viên 1 &amp; 2 sẽ thiết kế Form)"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp" />
+
+    <!-- Nút bấm để chuyển nhanh sang màn hình ResultForm (Thành viên 3) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOpenResult"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="sans-serif-medium"
+        android:text="Mở màn hình ResultForm (Thành viên 3)"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="14dp" />
+
+</LinearLayout>

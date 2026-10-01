@@ -2,4 +2,27 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Refined Modern UI Color Palette (UI/UX Pro Max System) -->
+    <!-- Unified Brand Primary Color (Indigo) -->
+    <color name="primary">#4F46E5</color>
+    <color name="primary_dark">#3730A3</color>
+    <color name="primary_container">#EEF2FF</color>
+    <color name="secondary">#6366F1</color>
+
+    <!-- Neutral Surface & Background Colors -->
+    <color name="bg_main">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+
+    <!-- High-Contrast Accessibility Text Colors (WCAG 7:1+ ratio) -->
+    <color name="text_primary">#0F172A</color> <!-- Slate 900 -->
+    <color name="text_secondary">#334155</color> <!-- Slate 700 -->
+    <color name="text_muted">#64748B</color> <!-- Slate 500 -->
+
+    <color name="divider_color">#E2E8F0</color>
+
+    <!-- Contextual Success Banner State -->
+    <color name="success_bg">#ECFDF5</color>
+    <color name="success_border">#A7F3D0</color>
+    <color name="success_text">#065F46</color>
 </resources>
