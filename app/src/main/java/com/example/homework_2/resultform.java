@@ -1,5 +1,6 @@
 package com.example.homework_2;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
  * - Mật khẩu được che bằng chuỗi ký tự sao (*)
  * - Xử lý thoát ứng dụng khi nhấn nút Exit
  */
-public class resultform extends AppCompatActivity {
+public class resultform extends Activity {
 
     public static final String KEY_USERNAME = "KEY_USERNAME";
     public static final String KEY_PASSWORD = "KEY_PASSWORD";
