@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homework2">
 
-        <!-- Activity 1: registerform (Activity khởi chạy chính) -->
         <activity
             android:name=".registerform"
             android:exported="true"
@@ -24,16 +23,12 @@
             </intent-filter>
         </activity>
 
-        <!-- Activity 2: resultform -->
         <activity
             android:name=".resultform"
             android:exported="false"
             android:label="@string/result_title" />
 
-        <!-- Default MainActivity -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
 
     </application>
 
