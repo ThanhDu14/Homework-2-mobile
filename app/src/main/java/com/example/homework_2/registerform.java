@@ -30,7 +30,7 @@ public class registerform extends Activity {
 
         initViews();
 
-        // 2. Gán sự kiện click gửi dữ liệu trực tiếp, không lồng nhau
+        
         btnSignUp.setOnClickListener(v -> {
             sendDataToResult();
         });
@@ -55,15 +55,15 @@ public class registerform extends Activity {
     }
 
     private void sendDataToResult() {
-        // Thu thập dữ liệu từ các ô nhập
+        
         String username = etUsername.getText() != null ? etUsername.getText().toString().trim() : "";
         String password = etPassword.getText() != null ? etPassword.getText().toString().trim() : "";
         String birthdate = etBirthdate.getText() != null ? etBirthdate.getText().toString().trim() : "";
 
-        // Xác định giới tính được chọn
+        
         String gender = rbFemale.isChecked() ? "Female" : "Male";
 
-        // Gom danh sách các sở thích được tick
+        
         ArrayList<String> selectedHobbies = new ArrayList<>();
         if (cbTennis.isChecked()) {
             selectedHobbies.add("Tennis");
@@ -75,7 +75,7 @@ public class registerform extends Activity {
             selectedHobbies.add("Others");
         }
 
-        // Đóng gói vào Bundle theo đúng các hằng số KEY của resultform
+        
         Bundle bundle = new Bundle();
         bundle.putString(resultform.KEY_USERNAME, username);
         bundle.putString(resultform.KEY_PASSWORD, password);
@@ -83,7 +83,7 @@ public class registerform extends Activity {
         bundle.putString(resultform.KEY_GENDER, gender);
         bundle.putStringArrayList(resultform.KEY_HOBBIES, selectedHobbies);
 
-        // Tạo Intent, gắn Bundle và mở màn hình resultform
+    
         Intent intent = new Intent(registerform.this, resultform.class);
         intent.putExtras(bundle);
         startActivity(intent);
